@@ -1,0 +1,132 @@
+/* pages/About.css */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
+  padding: 140px 0 80px;
+  text-align: center;
+  color: var(--white);
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-content {
+  padding: 80px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.mission-item {
+  background: var(--light-bg);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-orange);
+}
+
+.mission-item h4 {
+  color: var(--primary-blue);
+  margin-bottom: 5px;
+}
+
+.mission-item p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.why-choose {
+  margin-top: 40px;
+}
+
+.why-choose h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.why-item {
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.why-item span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.why-item h4 {
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-mission {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+}
