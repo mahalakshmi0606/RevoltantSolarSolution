@@ -1,9 +1,11 @@
 // App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from '../src/components/Navbar';
-import Footer from '../src/components/Footer';
-import WhatsAppButton from '../src/Pages/WhatsappButton';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import WhatsAppButton from './Pages/WhatsappButton';
+import ChatBot from '../src/Pages/Component/ChatBot';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Services from './Pages/Service';
@@ -29,6 +31,7 @@ function App() {
         </Routes>
         <Footer />
         <WhatsAppButton />
+        <ChatBot />
       </div>
     </Router>
   );

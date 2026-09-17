@@ -2,42 +2,189 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#0b1a2a" />
+
+    <!-- =====================================================
+         FAVICON & ICONS
+         Files expected in public/ folder:
+         - revoltant.png (main logo, also used as favicon)
+         - revoltant-192.png (optional PWA icon 192x192)
+         - revoltant-512.png (optional PWA icon 512x512)
+         - apple-touch-icon.png (optional iOS icon 180x180)
+         ===================================================== -->
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/revoltant.png" />
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/revoltant.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+
+    <!-- =====================================================
+         PRIMARY META TAGS (fallback when JS is disabled / for crawlers)
+         React Helmet will override these on each page.
+         ===================================================== -->
+    <title>Revoltant Solar Solutions | Rooftop Solar, Solar Pumps & EMI</title>
+
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Revoltant Solar Solutions provides rooftop solar, commercial solar, industrial solar, solar water pumps, solar street lights and solar cameras with EMI and financing options. Get a free solar quote today."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta
+      name="keywords"
+      content="solar solutions, rooftop solar, solar panels, solar pumps, solar water pumps, solar street lights, solar cameras, commercial solar, industrial solar, solar EMI, solar financing, solar installation, solar subsidy, PM Surya Ghar, net metering, on-grid solar, off-grid solar, hybrid solar, solar company India"
+    />
+
+    <meta name="author" content="Revoltant Solar Solutions" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- =====================================================
+         CANONICAL (fallback — Helmet overrides per-page)
+         ===================================================== -->
+    <link rel="canonical" href="https://www.revoltantsolarsolution.in/" />
+
+    <!-- =====================================================
+         GOOGLE SEARCH CONSOLE VERIFICATION
+         Replace the content value with your real GSC code.
+         Alternatively use the HTML file upload method.
+         ===================================================== -->
+    <meta
+      name="google-site-verification"
+      content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE"
+    />
+
+    <!-- =====================================================
+         GEO TAGS
+         ===================================================== -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+
+    <!-- =====================================================
+         OPEN GRAPH (fallback — Helmet overrides per-page)
+         ===================================================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Revoltant Solar Solutions" />
+    <meta
+      property="og:title"
+      content="Revoltant Solar Solutions | Rooftop Solar, Solar Pumps & EMI"
+    />
+    <meta
+      property="og:description"
+      content="Complete solar solutions for residential, commercial and industrial applications. EMI available. Reduce bills, go green."
+    />
+    <meta property="og:url" content="https://www.revoltantsolarsolution.in/" />
+    <meta property="og:image" content="%PUBLIC_URL%/revoltant.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Revoltant Solar Solutions — Rooftop Solar Installation"
+    />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- =====================================================
+         TWITTER CARD (fallback — Helmet overrides per-page)
+         ===================================================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Revoltant Solar Solutions | Rooftop Solar, Pumps & EMI"
+    />
+    <meta
+      name="twitter:description"
+      content="Complete solar solutions including rooftop solar, pumps, street lights and solar cameras with EMI options."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/revoltant.png" />
+
+    <!-- =====================================================
+         PERFORMANCE HINTS
+         ===================================================== -->
+    <!-- Preload hero image for LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="%PUBLIC_URL%/Home.png"
+      fetchpriority="high"
+    />
+
+    <!-- Preconnect to external services used by forms & chat -->
+    <link rel="dns-prefetch" href="https://script.google.com" />
+    <link rel="preconnect" href="https://script.google.com" crossorigin />
+    <link rel="dns-prefetch" href="https://wa.me" />
+    <link rel="preconnect" href="https://wa.me" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- Font (optional — remove if not using Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         PWA MANIFEST
+         ===================================================== -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- =====================================================
+         FALLBACK STRUCTURED DATA
+         (Helmet injects full schemas per page — this ensures
+         Organization data is available even before React mounts)
+         ===================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Revoltant Solar Solutions",
+        "url": "https://www.revoltantsolarsolution.in",
+        "logo": "https://www.revoltantsolarsolution.in/revoltant.png",
+        "image": "https://www.revoltantsolarsolution.in/revoltant.png",
+        "description": "Revoltant Solar Solutions provides rooftop solar, commercial solar, industrial solar, solar water pumps, solar street lights and solar camera solutions.",
+        "telephone": "+91-9384167482",
+        "email": "info@revoltantsolarsolution.in",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "India"
+        }
+      }
+    </script>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="font-family: Arial, sans-serif; padding: 24px; max-width: 720px; margin: 0 auto; text-align: center;">
+        <img
+          src="%PUBLIC_URL%/revoltant.png"
+          alt="Revoltant Solar Solutions"
+          style="max-width: 180px; margin-bottom: 16px;"
+        />
+        <h1>Revoltant Solar Solutions</h1>
+        <p>
+          You need to enable JavaScript to run this app.
+          Please enable JavaScript in your browser settings, or contact us directly:
+        </p>
+        <p>
+          📞 <a href="tel:+919384167482">+91 93841 67482</a><br />
+          💬 <a href="https://wa.me/919384167482">Chat on WhatsApp</a>
+        </p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      To begin development: npm start
+      To create a production bundle: npm run build
     -->
   </body>
 </html>
