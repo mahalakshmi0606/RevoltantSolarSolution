@@ -45,7 +45,7 @@ const SKIP_IMAGES = [
   'apple-touch-icon.png',
   'logo192.png',
   'logo512.png',
-  'revoltant.png',       // used as favicon + OG
+  'RevoltantLogo.webp',       // used as favicon + OG
   'manifest.json',
 ];
 

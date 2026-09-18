@@ -1,7 +1,7 @@
 // components/Footer.jsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/revoltant.png';
+import logo from '../assets/RevoltantLogo.webp';
 
 const THEME = {
   navyDark: '#0e1f4d',
