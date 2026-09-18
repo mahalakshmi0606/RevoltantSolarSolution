@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOME -->
   <url>
     <loc>https://www.revoltantsolarsolution.in/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-18</lastmod>
   </url>
+
+  <!-- ABOUT -->
   <url>
     <loc>https://www.revoltantsolarsolution.in/about</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-18</lastmod>
   </url>
+
+  <!-- SERVICES -->
+  <url>
+    <loc>https://www.revoltantsolarsolution.in/services</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+
+  <!-- PROJECTS -->
+  <url>
+    <loc>https://www.revoltantsolarsolution.in/projects</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+
+  <!-- SUBSIDY -->
+  <url>
+    <loc>https://www.revoltantsolarsolution.in/subsidy</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+
+  <!-- GALLERY -->
+  <url>
+    <loc>https://www.revoltantsolarsolution.in/gallery</loc>
+    <lastmod>2026-09-18</lastmod>
+  </url>
+
+  <!-- CONTACT -->
   <url>
     <loc>https://www.revoltantsolarsolution.in/contact</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-09-18</lastmod>
   </url>
+
 </urlset>
